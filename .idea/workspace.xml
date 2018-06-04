@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="466c640e-3520-44ee-90da-57af9b1a8509" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="msite.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/msite/msite.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="54" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#1603#2878#0" expanded="false" />
+                <element signature="e#3084#3429#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-252">
+              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Stylus File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gCArticlerSlideTop</find>
+      <find>gCRCContentLeft</find>
+      <find>gCRCList1RightImgCon</find>
+      <find>LAvatar</find>
+      <find>LookMoreImg</find>
+      <find>loginItem</find>
+      <find>class=</find>
+      <find>/rem</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>className=</replace>
+      <replace>/$rem</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/MsiteHeaderBottom/msiteHeaderBottom.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteBanner/msiteBanner.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteBanner/msiteBanner.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteBannerService/msiteBannerService.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteBrandSupply/msiteBrandSupply.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteBannerService/msiteBannerService.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteNewItem/msiteNewItem.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteFlash/msiteFlash.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteFlash/msiteFlash.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteNewItem/msiteNewItem.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteBrandSupply/msiteBrandSupply.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteGoodGrid/msiteHotItem.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteGoodGrid/msiteGoodGrid.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteGoodGrid/msiteGoodGrid.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteGoToTop/msiteGoToTop.styl" />
+        <option value="$PROJECT_DIR$/src/components/msiteGoToTop/msiteGoToTop.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gBanner/gBanner.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gBanner/gBanner.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/gArticle/gArticle.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/gArticle/gArticle.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gRecommend/gRecommend.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/gRecommend/gRecommend.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gTenfiften/gTenfiften.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/gTenfiften/Gtenfiften.vue" />
+        <option value="$PROJECT_DIR$/src/components/goods/gTenfiften/gTenfiften.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gZhen/gZhen.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gyxLook/gyxLook.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/gyxLook/gyxLook.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/Goods.vue" />
+        <option value="$PROJECT_DIR$/src/components/goods/gFindMore/gFindMore.jsx" />
+        <option value="$PROJECT_DIR$/src/components/classify/classify.styl" />
+        <option value="$PROJECT_DIR$/src/components/classify/classify.jsx" />
+        <option value="$PROJECT_DIR$/src/components/shopCart/shopCart.styl" />
+        <option value="$PROJECT_DIR$/src/components/shopCart/shopCart.jsx" />
+        <option value="$PROJECT_DIR$/src/components/profile/profile.styl" />
+        <option value="$PROJECT_DIR$/src/components/profile/profile.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.jsx" />
+        <option value="$PROJECT_DIR$/src/components/msite/msite.styl" />
+        <option value="$PROJECT_DIR$/src/components/msite/msite.jsx" />
+        <option value="$PROJECT_DIR$/src/components/goods/gFindMore/gFindMore.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/goods.styl" />
+        <option value="$PROJECT_DIR$/src/components/footerGuide/footerGuide.styl" />
+        <option value="$PROJECT_DIR$/src/components/goods/goods.jsx" />
+        <option value="$PROJECT_DIR$/src/components/footerGuide/footerGuide.jsx" />
+        <option value="$PROJECT_DIR$/src/components/main/main.jsx" />
+        <option value="$PROJECT_DIR$/src/views/goods/goods.jsx" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/views/msite/msite.jsx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="msite" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wyyx/wyyx" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="list.type.of.created.stylesheet" value="Stylus" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Webstorm\wyyx-client\src" />
+      <recent name="E:\Webstorm\wyyx-client\src\api" />
+      <recent name="E:\Webstorm\wyyx-client\src\views" />
+      <recent name="E:\Webstorm\wyyx-client\src\components\FooterGuide" />
+      <recent name="E:\Webstorm\wyyx-client\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Webstorm\wyyx-client\src\views" />
+      <recent name="E:\Webstorm\wyyx-client\src\components\msite\images" />
+      <recent name="E:\Webstorm\wyyx-client\src\components\goods" />
+      <recent name="E:\Webstorm\wyyx-client\src\components\msite" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\谢凌霄\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="466c640e-3520-44ee-90da-57af9b1a8509" name="Default" comment="" />
+      <created>1527899767669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527899767669</updated>
+      <workItem from="1527899769746" duration="19264000" />
+      <workItem from="1527988827271" duration="27818000" />
+      <workItem from="1528071797177" duration="3248000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="50330000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42414355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42414355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.jsx</url>
+          <line>25</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.jsx</url>
+          <line>24</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="13" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/msiteBanner/msiteBanner.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msite/images/service/service.png" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteBannerService/msiteBannerService.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteBannerService/msiteBannerService.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msite/images/brand/01.png" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteBrandSupply/msiteBrandSupply.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteBrandSupply/msiteBrandSupply.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteNewItem/msiteNewItem.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msite/images/newItems/01.png" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteNewItem/msiteNewItem.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteFlash/msiteFlash.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteFlash/msiteFlash.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteGoodGrid/images/01.png" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteGoodGrid/msiteGoodGrid.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msiteGoodGrid/msiteGoodGrid.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/msite/msite.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/msite/msite.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gBanner/gBanner.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gBanner/gBanner.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/images/banner/01.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gArticle/gArticle.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gArticle/gArticle.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gRecommend/gRecommend.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gRecommend/gRecommend.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gTenfiften/gTenfiften.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gTenfiften/gTenfiften.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gZhen/gZhen.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gZhen/gZhen.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gyxLook/gyxLook.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gyxLook/gyxLook.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gFindMore/gFindMore.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gFindMore/01.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/gFindMore/gFindMore.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/goods/goods.styl" />
+    <entry file="file://$PROJECT_DIR$/src/components/footerGuide/FooterGuide.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="n#footer#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#!!top" expanded="false" />
+            <element signature="e#1468#2685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/footerGuide/images/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/goods/goods.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/footerGuide/footerGuide.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/footerGuide/footerGuide.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/classify/classify.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/views/goods/goods.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/main/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/mockServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/msite/msite.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="54" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#1603#2878#0" expanded="false" />
+            <element signature="e#3084#3429#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

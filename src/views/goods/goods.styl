@@ -1,0 +1,463 @@
+@import "../../assets/stylus/mixins.styl"
+.gHeader
+  width 10rem
+  height (87/$rem)
+  background #fff
+  display flex
+  flex-flow row nowrap
+  align-items center
+  justify-content space-between
+  box-sizing border-box
+  padding 0 (16/$rem) 0 (24/$rem)
+  position fixed
+  top 0
+  left 0
+  z-index 3
+  &>div
+    font-size 0
+  /*display inline-block*/
+  .gHeaderLeft
+    .home
+      display inline-block
+      width (48/$rem)
+      height (44/$rem)
+      background-image url("./images/header/logos.png")
+      background-repeat no-repeat
+      background-position 0 (-74/$rem)
+  .gHeaderTitle
+    width (172/$rem)
+    height (54/$rem)
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    margin auto
+    .logo
+      display inline-block
+      width (172/$rem)
+      height (54/$rem)
+      background-image url("./images/header/logos.png")
+      background-repeat no-repeat
+      background-position 0 (-128/$rem)
+  .gHeaderRight
+    .search
+      display inline-block
+      width (64/$rem)
+      height (64/$rem)
+      background-image url("./images/header/logos.png")
+      background-repeat no-repeat
+      background-position 0 (-334/$rem)
+      margin-right (20/$rem)
+    .cart
+      display inline-block
+      width (64/$rem)
+      height (64/$rem)
+      background-image url("./images/header/logos.png")
+      background-repeat no-repeat
+      background-position 0 0
+.gContent
+  padding (87/$rem) 0 (97/$rem) 0
+  .gContentBanner
+    background #fff
+    .gCBannerWrap
+      width (690/$rem)
+      height (433/$rem)
+      box-sizing border-box
+      padding (24/$rem) 0
+      margin 0 (30/$rem)
+      background #fff
+      .gCBannerContainer
+        height 100%
+        .gCBannerContent
+          height 100%
+          position relative
+          .gCBanImg
+            width 100%
+            height 100%
+          .gCBanMask
+            background rgba(255,255,255,.9)
+            width (466/$rem)
+            height (198/$rem)
+            box-sizing border-box
+            position absolute
+            left 0
+            right 0
+            top 0
+            bottom 0
+            margin auto
+            display flex
+            flex-flow column
+            align-items center
+            justify-content center
+            .gCBanMaskTitle
+              line-height (30/$rem)
+              font-size (20/$rem)
+              color #7f7f7f
+            .gCBanMaskDes
+              line-height (48/$rem)
+              margin-top (14/$rem)
+              color #333
+              font-size (32/$rem)
+              font-weight 700
+            .gCBanMaskSale
+              margin-top (4/$rem)
+              line-height (36/$rem)
+              color #333
+              font-size (24/$rem)
+  .gCArticle
+    box-sizing border-box
+    height (286/$rem)
+    background #fff
+    padding (32/$rem) (30/$rem) (28/$rem) (30/$rem)
+    margin-bottom (20/$rem)
+    .gCArticlerSlide
+      width (164/$rem)
+      height (210/$rem)
+      margin-right (24/$rem)
+      background #fff
+      position relative
+      .gCArticlerSlideTop
+        width (164/$rem)
+        height (164/$rem)
+        margin-bottom (20/$rem)
+        border-radius (4/$rem)
+        background-image url("./images/article/01.png")
+        background-position center
+        background-size cover
+      .gCArticlerSlideCount
+        width (150/$rem)
+        height (32/$rem)
+        color #f4f4f4
+        font-size (24/$rem)
+        line-height (32/$rem)
+        position absolute
+        top 0
+        left (8/$rem)
+        text-align right
+        background-image url("./images/article/bg.png")
+        background-size 100%
+      .gCArticlerSlideTitle
+        font-size (24/$rem)
+        color #333
+        text-align center
+        height (24/$rem)
+        line-height (24/$rem)
+  .gCRecommend
+    box-sizing border-box
+    padding 0 (30/$rem) (40/$rem)
+    margin-bottom (20/$rem)
+    background #fff
+    .gCRContent
+      .gCRCHeader
+        font-size (32/$rem)
+        height (120/$rem)
+        text-align center
+        line-height (120/$rem)
+      .gCRCContent
+        margin-bottom (30/$rem)
+        color #333
+        border 1px solid #d9d9d9
+        border-radius (8/$rem)
+        .gCRCContentLeft
+          height (386/$rem)
+          background-image url("./images/recommend/01.jpg")
+          background-size cover
+          position relative
+          .gCRCContentLeftTitle
+            position absolute
+            top (20/$rem)
+            left (20/$rem)
+            .gCRCContentLeftText
+              font-size (24/$rem)
+              background rgba(255,255,255,.9)
+              border-radius (20/$rem)
+              border 1px solid #d9d9d9
+              padding 0 (16/$rem)
+        .gCRCContentRight
+          padding (24/$rem) (20/$rem) (67/$rem) (20/$rem)
+          .gCRCContentRightTop
+            height (43/$rem)
+            font-size (36/$rem)
+            margin-bottom (19/$rem)
+            line-height (28/$rem)
+            display flex
+            flex-flow row nowrap
+            align-items center
+            justify-content space-between
+
+          .gCRCContentRightBottom
+            .gCRCCRBTitle
+              font-size (28/$rem)
+              color #7f7f7f
+              line-height 1.2
+      .gCRCList1
+        border 1px solid #d9d9d9
+        color #333
+        margin-bottom (30/$rem)
+        display flex
+        flex-flow row nowrap
+        &:last-child
+          margin-bottom 0
+        .gCRCList1Left
+          padding 0 (30/$rem) 0 (20/$rem)
+          display flex
+          flex-flow column
+          justify-content center
+          flex 1
+          width (408/$rem)
+          overflow hidden
+          .gCRCList1Left1
+            display: flex
+            flex-flow row nowrap
+            align-items center
+            margin-bottom (25/$rem)
+            .gCRCLAvatar
+              display block
+              width (46/$rem)
+              height (46/$rem)
+              margin-right (8/$rem)
+              border-radius 50%
+            .nickName
+              font-size (20/$rem)
+              color #333
+          .gCRCList1Left2
+            margin-bottom (14/$rem)
+            .gCRCList1LeftTitle
+              margin-right (30/$rem)
+              font-size (32/$rem)
+          .gCRCList1Left3
+            .Left3Con
+              width (358/$rem)
+              font-size (24/$rem)
+              color #7f7f7f
+        .gCRCList1Right
+          width (280/$rem)
+          height (272/$rem)
+          .gCRCList1RightImgCon
+            width 100%
+            height 100%
+            background-image url("./images/recommend/minImg.jpg")
+            background-size cover
+            overflow hidden
+            position relative
+            .gCRCList1RightTitle
+              position absolute
+              font-size (24/$rem)
+              background rgba(255,255,255,.9)
+              padding 0 (16/$rem)
+              border-radius (20/$rem)
+              top (10/$rem)
+              left (10/$rem)
+  .gTenFifteen
+    box-sizing border-box
+    padding 0 (30/$rem) (40/$rem) (30/$rem)
+    margin-bottom (20/$rem)
+    background #fff
+    .gTenFifteenInner
+      .gTenFifteenHD
+        height (120/$rem)
+        line-height (120/$rem)
+        font-size (32/$rem)
+        text-align center
+      .gTenFifteenContainer
+        .gTenFifteenSlide
+          box-sizing border-box
+          width (580/$rem)
+          margin-right (30/$rem)
+          .gTenFifteenItem
+            box-sizing border-box
+            width (580/$rem)
+            height (411/$rem)
+            padding (38/$rem) (40/$rem) (79/$rem) (40/$rem)
+            margin-right (30/$rem)
+            background-image url("./images/tenFifteen/bg.png")
+            color #333
+            position relative
+            .gTenFifteenItemLine1
+              margin-bottom (40/$rem)
+              color #333
+              font-size (24/$rem)
+              text-align center
+            .gTenFifteenItemTitle
+              margin-bottom (14/$rem)
+              font-size (36/$rem)
+              font-weight 700
+              text-align center
+
+            .gTenFifteenItemDes
+              font-size (28/$rem)
+              text-align center
+            .gTenFifteenItemJoin
+              position absolute
+              bottom (79/$rem)
+              width (500/$rem)
+              .joinInner
+                display flex
+                flex-flow row nowrap
+                justify-content center
+                clearFix()
+                .joinInnerLeft
+                  float left
+                  display flex
+                  flex-flow row nowrap
+                  margin-right (30/$rem)
+                  & > div
+                    width (48/$rem)
+                    height (48/$rem)
+                    border-radius 50%
+                  .AEl
+                    background #d9d9d9
+                    border 2px solid #fff
+                    box-sizing border-box
+                    display flex
+                    flex-flow row nowrap
+                    align-items center
+                    justify-content center
+                    .spot
+                      width (6/$rem)
+                      height (6/$rem)
+                      border-radius 50%
+                      margin-right (4/$rem)
+                      background #fff
+                .joinInnerRight
+                  height (48/$rem)
+                  line-height (48/$rem)
+                  font-size (24/$rem)
+                  color #333
+                  vertical-align center
+                  float left
+          .gTenFifteenItemMore
+            display flex
+            flex-flow row nowrap
+            align-items center
+            justify-content center
+            color #7f7f7f
+            font-size (32/$rem)
+            line-height (38/$rem)
+            margin-right (17/$rem)
+            .MoreText
+              margin-right (30/$rem)
+            .Moreicon
+              display inline-block
+              width (30/$rem)
+              height (30/$rem)
+              background-image url("./images/tenFifteen/more.png")
+              vertical-align middle
+  .gCLook
+    .gCLTitle
+      background #fff
+      text-align center
+      font-size (32/$rem)
+      height (120/$rem)
+      line-height (120/$rem)
+    .gCLcontent
+      position relative
+      .gCLcontentImage
+        width 100%
+        height auto
+      .gCLcontentInfo
+        box-sizing border-box
+        padding (24/$rem) (30/$rem) (46/$rem) (30/$rem)
+        background #fff
+        .gCLcontentInfoTop
+          display flex
+          flex-flow row nowrap
+          align-items center
+          .TopAvatar
+            width (46/$rem)
+            height (46/$rem)
+            border-radius 50%
+            margin-right (8/$rem)
+            box-sizing border-box
+            border 1px solid #d9d9d9
+            overflow hidden
+            & > img
+              display block
+              width 100%
+              height 100%
+          .gCnickName
+            color #333
+            font-size (24/$rem)
+        .gCLcontentInfoBottom
+          color #7f7f7f
+          font-size (28/$rem)
+          line-height (45/$rem)
+      .gCLspot
+        position absolute
+        top (190/$rem)
+        left (262/$rem)
+        width (16/$rem)
+        height (16/$rem)
+        background #f48f18
+        border-radius 50%
+        /*border 1px solid #f48f18*/
+        /*animation bling 2s infinite*/
+        .gCLspotCenter
+          width (16/$rem)
+          height (16/$rem)
+          background #f48f18
+          border-radius 50%
+          border 1px solid #f48f18
+          animation bling 1s infinite
+    @keyframes bling
+      from
+        transform scale(0)
+        opacity 0
+      to
+        transform scale(3)
+        opacity .3
+  .gCLookMore
+    margin 0 (30/$rem) (30/$rem) (30/$rem)
+    .gCLookMoreHd
+      height (140/$rem)
+      display flex
+      flex-flow row nowrap
+      align-items center
+      &::after,&::before
+        display block
+        content ''
+        width (264/$rem)
+        height 1px
+        background #d9d9d9
+      .gCLookMoreHdTitle
+        margin 0 (24/$rem)
+        font-size (28/$rem)
+        color #333
+    .gCLookMoreContent
+      .gCLookMoreContentItem
+        padding (24/$rem)
+        margin-bottom (30/$rem)
+        background #fff
+        .LookMoreImg
+          height (360/$rem)
+          width (642/$rem)
+          background-image url("./images/fineMore/01.jpg")
+          background-size cover
+        .LookMoreImgThree
+          height (360/$rem)
+          width (642/$rem)
+          & >.LookLeft
+            width (460/$rem)
+            height (360/$rem)
+            box-sizing border-box
+            margin-right (4/$rem)
+            background-size cover
+            float left
+          & >.LookRight
+            box-sizing border-box
+            width (178/$rem)
+            float right
+            & > .LookTop
+              height (178/$rem)
+              box-sizing border-box
+              margin-bottom (4/$rem)
+              background-size cover
+            & >.LookBottom
+              height (178/$rem)
+              box-sizing border-box
+              background-size cover
+        .LookMoreDes
+          padding (29/$rem) 0 (28/$rem) 0
+          font-size (28/$rem)
+          line-height 1.2

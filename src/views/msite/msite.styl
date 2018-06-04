@@ -1,0 +1,698 @@
+@import "../../assets/stylus/mixins.styl"
+rem=750/10rem
+.msiteHeader
+  background #fff
+  position fixed
+  left 0
+  top 0
+  z-index 5
+  width 100%
+  .headerTop
+    padding (16/rem) (30/rem)
+    display flex
+    flex-flow row nowrap
+    align-items center
+    .logo
+      width (138/rem)
+      height (40/rem)
+      background-image url("./images/logo.png")
+      margin-right (20/rem)
+    .search
+      flex-grow 1
+      height (56/rem)
+      display flex
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      background #ededed
+      border-radius (8/rem)
+      font-size (28/rem)
+      .icon
+        display inline-block
+        width (28/rem)
+        height (28/rem)
+        background-image url("./images/search.png")
+        margin-right (10/rem)
+        vertical-align middle
+      .placeholder
+        color #666
+        vertical-align middle
+        line-height (42/rem)
+  .hesderBottom
+    overflow hidden
+    height (60/$rem)
+    display flex
+    .list
+      height 100%
+      background #fff
+      padding 0 (30/$rem)
+      display flex
+      flex-flow row nowrap
+      flex-shrink 0
+      justify-content space-around
+      align-items center
+      .item
+        margin-left (48/$rem)
+        flex-shrink 0
+        position relative
+        display flex
+        flex-flow row nowrap
+        align-items center
+        height 100%
+        text-align center
+        &:first-of-type {
+          margin-left: 0;
+        }
+        .text
+          font-size (28/$rem)
+          padding 0 (16/$rem)
+          color #333
+          &.active
+            color rgb(180, 40, 45)
+            &::after
+              content ''
+              width 100%
+              height (4/$rem)
+              position absolute
+              left 0
+              bottom 0
+              background rgb(180, 40, 45)
+.msiteContent
+  padding (148/rem) 0 (98/rem) 0
+  .slide_service
+    margin-bottom (20/rem)
+    background #fff
+    .slide
+      height (400/rem)
+      .swiper-container
+        &>.mySwiperPagination
+          bottom (30/rem)
+          font-size 0
+          .swiper-pagination-bullet
+            width (50/rem)
+            height (4/rem)
+            display: inline-block;
+            background: #fff;
+            opacity: .4;
+            margin-right (10/rem)
+          .swiper-pagination-bullet-active
+            opacity 1
+        .swiper-wrapper
+          width 100%
+          height (400/rem)
+          .swiper-slide
+            .bannerImg
+              width 100%
+              height 100%
+    .service
+      background #fff
+      .list
+        height (72/rem)
+        display flex
+        flex-flow row nowrap
+        align-items center
+        padding 0 (30/rem)
+        .item
+          font-size 0
+          flex 1
+          a
+            font-size (24/rem)
+            .servicePolicy
+              display inline-block
+              width (32/rem)
+              height (32/rem)
+              background-image url("./images/service/service.png")
+              background-repeat no-repeat
+              background-size 100% 100%
+              vertical-align middle
+            .serviceName
+              font-size (24/rem)
+              color #333
+              margin-left (8/rem)
+              line-height (32/rem)
+              display inline-block
+              vertical-align middle
+  .brandSupply
+    margin-bottom (20/rem)
+    background #fff
+    .header
+      height (110/rem)
+      display flex
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      a
+        display flex
+        flex-flow row nowrap
+        align-items center
+        span
+          font-size (32/rem)
+          color: #333
+          vertical-align middle
+        i
+          background-image url("./images/supply/supplyMore.png")
+          background-repeat no-repeat
+          background-size 100% 100%
+          display inline-block
+          width (30/rem)
+          height (30/rem)
+          margin-left (10/rem)
+          vertical-align middle
+    .content
+      .contentList
+        height (468/rem)
+        margin 0 (16/rem)
+        .contentItem
+          float left
+          width (355/rem)
+          height (226/rem)
+          margin-bottom (8/rem)
+          background #f4f4f4
+          position relative
+          &:nth-child(1)
+            margin 0 (8/rem) 0 0
+          &:nth-child(3)
+            margin 0 (8/rem) 0 0
+          & > a
+            display inline-block
+            width 100%
+            height 100%
+            .brand
+              position absolute
+              left 0
+              top 0
+              padding (20/rem) 0 0 (20/rem)
+              font-size (24/rem)
+              z-index 4
+              .title
+                color: #333;
+                font-size: (28/rem)
+                line-height: (32/rem)
+                margin-bottom: (6/rem)
+            .brandImg
+              width 100%
+              height 100%
+              opacity 1
+  .newItems
+    margin-bottom (20/rem)
+    background #fff
+    .hd
+      background-image url("./images/newItems/bg.png")
+      background-size (750/rem) (260/rem)
+      height (260/rem)
+      margin-bottom (32/rem)
+      display flex
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      font-size (32/rem)
+      .more
+        display block
+        text-align center
+        font-size (36/rem)
+        color #8BA0B6
+        .all
+          margin (16/rem) auto 0
+          width (240/rem)
+          height (56/rem)
+          font-size (28/rem)
+          line-height (56/rem)
+          background #D8E5F1
+          .wrap
+            width (128/rem)
+            display inline-block
+            text-align left
+            position relative
+            i
+              position absolute
+              top (17/rem)
+              background: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexNewArrow-f3b56d449b.png);
+              background-size (10/rem) (22/rem)
+              display: inline-block;
+              height: (22/rem)
+              width: (10/rem)
+              margin-left (6/rem)
+    .goods
+      height (480/rem)
+      .inner
+        height (480/rem)
+        overflow hidden
+        .list
+          height (414/rem)
+          .item
+            padding 0
+            margin-left (30/rem)
+            width (280/rem)
+            overflow hidden
+            position relative
+            float left
+            .good
+              display block
+              width 100%
+              height 100%
+              .good_header
+                background #f4f4f4
+                border-radius (4/rem)
+                height (280/rem)
+                .wrap
+                  position relative
+                  padding-bottom 100%
+                  margin-bottom (20/rem)
+                  img
+                    position absolute
+                    width 100%
+                    height 100%
+                    left 0
+                    top 0
+              .goodName
+                margin (10/rem) 0
+                padding 0 (10/rem)
+                font-size (28/rem)
+                line-height (34/rem)
+                text-align left
+                text-overflow ellipsis
+                overflow hidden
+                white-space nowrap
+                color #333
+              .gooeDesc
+                margin-bottom (14/rem)
+                font-size (24/rem)
+                color: #7f7f7f;
+                line-height (30/rem)
+                padding: 0 (10/rem)
+              .goodPrice
+                padding 0 (10/rem)
+                font-size (28/rem)
+                text-align left
+                color #b4282d
+                line-height 1
+            &.lookMore
+              display block
+              border (8/rem) solid #F4F4F4
+              width (264/rem)
+              height (264/rem)
+              margin 0 (30/rem)
+              line-height (264/rem)
+              text-align center
+              .click
+                display block
+                width 100%
+                height 100%
+                .moreText
+                  font-size (28/rem)
+  .hotItems
+    margin-bottom (20/rem)
+    background #fff
+    .hd
+      background-image url("./images/hotItems/bg.png")
+      background-size (750/rem) (260/rem)
+      height (260/rem)
+      margin-bottom (32/rem)
+      display flex
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      font-size (32/rem)
+      .more
+        display block
+        text-align center
+        font-size (36/rem)
+        color #B4A078
+        .all
+          margin (16/rem) auto 0
+          width (240/rem)
+          height (56/rem)
+          font-size (28/rem)
+          line-height (56/rem)
+          background #F4E9CB
+          .wrap
+            width (128/rem)
+            display inline-block
+            text-align left
+            position relative
+            i
+              color #B4A078
+              position absolute
+              top (17/rem)
+              background: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexNewArrow-f3b56d449b.png);
+              background-size (10/rem) (22/rem)
+              display: inline-block;
+              height: (22/rem)
+              width: (10/rem)
+              margin-left (6/rem)
+    .goods
+      height (480/rem)
+      .hotInner
+        height (480/rem)
+        overflow hidden
+        .list
+          height (414/rem)
+          .item
+            padding 0
+            margin-left (30/rem)
+            width (280/rem)
+            overflow hidden
+            position relative
+            float left
+            .good
+              display block
+              width 100%
+              height 100%
+              .good_header
+                background #f4f4f4
+                border-radius (4/rem)
+                height (280/rem)
+                .wrap
+                  position relative
+                  padding-bottom 100%
+                  margin-bottom (20/rem)
+                  img
+                    position absolute
+                    width 100%
+                    height 100%
+                    left 0
+                    top 0
+              .goodName
+                margin (10/rem) 0
+                padding 0 (10/rem)
+                font-size (28/rem)
+                line-height (34/rem)
+                text-align left
+                text-overflow ellipsis
+                overflow hidden
+                white-space nowrap
+                color #333
+              .gooeDesc
+                margin-bottom (14/rem)
+                font-size (24/rem)
+                color: #7f7f7f;
+                line-height (30/rem)
+                padding: 0 (10/rem)
+              .goodPrice
+                padding 0 (10/rem)
+                font-size (28/rem)
+                text-align left
+                color #b4282d
+                line-height 1
+            &.lookMore
+              display block
+              border (8/rem) solid #F4F4F4
+              width (264/rem)
+              height (264/rem)
+              margin 0 (30/rem)
+              line-height (264/rem)
+              text-align center
+              .click
+                display block
+                width 100%
+                height 100%
+                .moreText
+                  font-size (28/rem)
+  .flashSale
+    .flashA
+      .flashContent
+        box-sizing border-box
+        height (380/rem)
+        margin-bottom (20/rem)
+        padding (30/rem) (40/rem) (30/rem) (56/rem)
+        background #fff
+        display flex
+        .leftItem
+          flex 1
+          display flex
+          flex-direction column
+          padding-top (80/rem)
+          .title
+            font-size (36/rem)
+            line-height (36/rem)
+            margin-bottom (24/rem)
+            color #333
+            letter-spacing (12/rem)
+          .countdown
+            display inline
+            font-size 0
+            .hours,.mins,.secs
+              display inline-block
+              line-height (56/rem)
+              text-align center
+              width (62/rem)
+              height (56/rem)
+              font-size (32/rem)
+              color #fff
+              border-radius (4/rem)
+              background #444
+            .colon
+              color #333
+              font-size (30/rem)
+              width (20/rem)
+              display inline-block
+              text-align center
+              font-weight 700
+          .next
+            margin-top (40/rem)
+            color #333
+            font-size (24/rem)
+            line-height (24/rem)
+            height (24/rem)
+        .rightItem
+          background #fff
+          width (320/rem)
+          height (320/rem)
+          position relative
+          .flashGood
+            width 100%
+            img
+              width 100%
+              height 100%
+          .flashPrice
+            height (96/rem)
+            width (96/rem)
+            position absolute
+            right (20/rem)
+            bottom (36/rem)
+            background-color rgba(244,143,24,.95)
+            border-radius: 100%;
+            color #fff
+            text-align center
+            display flex
+            flex-direction column
+            justify-content center
+            .nowPrice,.originPrice
+              font-size (28/rem)
+              line-height (28/rem)
+              height (28/rem)
+              .rmb
+                font-size (24/rem)
+                line-height (24/rem)
+  .sale
+    width (750/rem)
+    height (300/rem)
+    margin-bottom (20/rem)
+    background papayawhip
+    .saleClick
+      display block
+      width 100%
+      height 100%
+      background-image url("./images/sale/01.jpg")
+      background-repeat no-repeat
+      background-position center
+  .topics
+    margin-bottom (20/rem)
+    background #fff
+    .topicHeader
+      height (110/rem)
+      font-size (32/rem)
+      display flex
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      .topicClick
+        display flex
+        align-items center
+        flex-flow row nowrap
+        color #333
+        vertical-align middle
+        i
+          display inline-block
+          vertical-align middle
+          background-image url("/images/supply/supplyMore.png")
+          background-repeat no-repeat
+          background-size 100% 100%
+          width (30/rem)
+          height (30/rem)
+          margin-left (10/rem)
+    .topicSlide
+      padding 0 (30/rem) (36/rem) (30/rem)
+      overflow hidden
+      .topicSlide-container
+        overflow visible
+        .topicList
+          width (575/rem)
+          .topicItem
+            margin-right (20/rem)
+            .topicA
+              display block
+              width (575/rem)
+              height (322/rem)
+              margin-bottom (16/rem)
+              border-radius (8/rem)
+              overflow hidden
+              img
+                width 100%
+                height auto
+                position relative
+                left 50%
+                transform translateX(-50%)
+            .topicDes
+              height (41/rem)
+              margin-bottom (2/rem)
+              .topicDesTitle
+                float left
+                font-size (28/rem)
+                width (410/rem)
+              .topicPrice
+                float right
+                font-size (28/rem)
+                color #b4282d
+            .topicDesPlus
+              width (575/rem)
+              font-size (24/rem)
+              color #7F7F7F
+  .goodGrid
+    margin-bottom (20/rem)
+    background #fff
+    .goodGrid-wrap
+      background #f4f4f4
+      .goodGrid-title
+        line-height (120/rem)
+        text-align center
+        font-size (28/rem)
+        color #333
+        background-color #fff
+
+      .goodGridContent
+        background #fff
+        position relative
+        .goodGridList
+          clearFix()
+          position relative
+          .goodGridItem
+            float left
+            width 50%
+            overflow hidden
+            position relative
+            box-sizing border-box
+            &:nth-child(2n+1)
+              padding 0 (10/rem) (33/rem) (20/rem)
+            &:nth-child(2n)
+              padding 0 (20/rem) (33/rem) (10/rem)
+            .goodGridItemA
+              width 100%
+              .goodGridItemA-hd
+                background #f4f4f4
+                border-radius (4/rem)
+                position relative
+                .goodGridImg
+                  position relative
+                  padding-bottom 120%
+                  img
+                    position absolute
+                    width 100%
+                    height (345/rem)
+                    border-radius (4/rem) (4/rem) 0 0
+                    background-color #f4f4f4
+                .goodGridDes
+                  position absolute
+                  bottom 0
+                  width 100%
+                  background #F1ECE2
+                  border-radius 0 0 (4/rem) (4/rem)
+                  font-size (24/rem)
+                  color #9F8A60
+                  letter-spacing 0
+                  line-height (28/rem)
+                  padding (20/rem) (10/rem)
+                  box-sizing border-box
+              .goodGridItemA-name
+                margin-top (10/rem)
+                padding 0 (10/rem)
+                line-height (48/rem)
+                text-align left
+                font-size (28/rem)
+                color #333
+              .goodGridItemA-price
+                line-height 1
+                font-size (32/rem)
+                text-align left
+                color #b4282d
+                padding 0 (10/rem)
+          .goodGridItem-more
+            .moreContent
+              height (414/rem)
+              font-size (32/rem)
+              overflow hidden
+              .moreContentA
+                border-radius (4/rem)
+                background-color #f4f4f4
+                padding-top (128/rem)
+                padding-bottom (129/rem)
+                width: 100%
+                display flex
+                flex-direction column
+                align-items center
+                justify-content center
+                p
+                  padding-bottom (60/rem)
+                i
+                  display inline-block
+                  vertical-align middle
+                  background-image url("./images/supply/supplyMore.png")
+                  background-repeat no-repeat
+                  background-size 100% 100%
+                  width (67/rem)
+                  height (67/rem)
+  .msiteFooter
+    border-top 1px solid rgba(0,0,0,.15)
+    background-color #414141
+    .footerContent
+      margin 0 auto
+      width 10rem
+      text-align center
+      box-sizing border-box
+      padding (54/rem) (20/rem) (28/rem) (20/rem)
+      .button
+        font-size 0
+        .goToBtns
+          display inline-block
+          border-radius (4/rem)
+          text-align center
+          overflow hidden
+          border 1px solid #999
+          height (60/rem)
+          line-height (60/rem)
+        .downloadBtn
+          margin-right (50/rem)
+          width (170/rem)
+          font-size (24/rem)
+          color #fff
+        .toPcBtn
+          width (170/rem)
+          font-size (24/rem)
+          color #fff
+      .copyright
+        margin-top (36/rem)
+        font-size (24/rem)
+        line-height (32/rem)
+        color #999
+.newUserEntrance
+  position fixed
+  right 0
+  bottom (210/rem)
+  display block
+  z-index 10
+  i
+    display inline-block
+    width (112/rem)
+    height (80/rem)
+    background-image url("./images/newUser/newUser.png")
+    background-size 100% 100%

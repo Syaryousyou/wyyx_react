@@ -1,0 +1,231 @@
+[
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10372067",
+      "materialName": "活动 六一",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "http://you.163.com/act/pub/IrChjs7fqr.html",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/645f3d7b9d89b2dec7e6ab2c80a9abeb.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/645f3d7b9d89b2dec7e6ab2c80a9abeb.jpg",
+        "linkUrl": "https://m.you.163.com/act/pub/IrChjs7fqr.html",
+        "linkType": 2,
+        "wapLinkUrl": "https://m.you.163.com/act/pub/IrChjs7fqr.html",
+        "pcPicUrl": "https://yanxuan.nosdn.127.net/082c1bc3da42090794b0d6f9caf8cc1f.jpg"
+      },
+      "resourcesId": 1,
+      "materialId": "10371070",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 10371070,
+    "name": "活动 六一",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/645f3d7b9d89b2dec7e6ab2c80a9abeb.jpg",
+    "targetUrl": "https://m.you.163.com/act/pub/IrChjs7fqr.html"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10405502",
+      "materialName": "类目 拖鞋",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "http://you.163.com/item/list?categoryId=1008000&subCategoryId=1008010",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/c1c1bc4fc889ed1bbb662de6927c0324.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/c1c1bc4fc889ed1bbb662de6927c0324.jpg",
+        "linkUrl": "https://you.163.com/item/list?categoryId=1008000&subCategoryId=1008010",
+        "linkType": 2,
+        "wapLinkUrl": "https://you.163.com/item/list?categoryId=1008000&subCategoryId=1008010",
+        "pcPicUrl": "https://yanxuan.nosdn.127.net/2e4ec088b062ec4bec4af074f9068ee2.jpg"
+      },
+      "resourcesId": 2,
+      "materialId": "10205794",
+      "taskType": 2,
+      "materialType": "广告banner",
+      "crmUserGroupName": "历史订单=0的用户",
+      "operator": "张宛亭",
+      "crmUserGroupId": "20180328153909648"
+    },
+    "id": 10205794,
+    "name": "类目 拖鞋",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/c1c1bc4fc889ed1bbb662de6927c0324.jpg",
+    "targetUrl": "https://you.163.com/item/list?categoryId=1008000&subCategoryId=1008010"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10371046",
+      "materialName": "类目 箱包",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "http://you.163.com/item/list?categoryId=1008000&subCategoryId=1037000",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/141d4d8bf003475fdade1f3aa3063f02.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/141d4d8bf003475fdade1f3aa3063f02.jpg",
+        "linkUrl": "https://you.163.com/item/list?categoryId=1008000&subCategoryId=1037000",
+        "linkType": 2,
+        "wapLinkUrl": "https://you.163.com/item/list?categoryId=1008000&subCategoryId=1037000",
+        "pcPicUrl": "https://yanxuan.nosdn.127.net/85554fafa67543ca551039ed891f9387.jpg"
+      },
+      "resourcesId": 3,
+      "materialId": "8499231",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 8499231,
+    "name": "类目 箱包",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/141d4d8bf003475fdade1f3aa3063f02.jpg",
+    "targetUrl": "https://you.163.com/item/list?categoryId=1008000&subCategoryId=1037000"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10405507",
+      "materialName": "类目 牛仔",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "http://you.163.com/item/list?categoryId=1010000&subCategoryId=1068003",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/c597e2714c71360b46ff1d3778cb2ec6.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/c597e2714c71360b46ff1d3778cb2ec6.jpg",
+        "linkUrl": "https://m.you.163.com/item/list?categoryId=1010000&subCategoryId=1068003",
+        "linkType": 2,
+        "wapLinkUrl": "https://m.you.163.com/item/list?categoryId=1010000&subCategoryId=1068003",
+        "pcPicUrl": "https://yanxuan.nosdn.127.net/503d071491f619fd940731f37be68501.jpg"
+      },
+      "resourcesId": 4,
+      "materialId": "10275473",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 10275473,
+    "name": "类目 牛仔",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/c597e2714c71360b46ff1d3778cb2ec6.jpg",
+    "targetUrl": "https://m.you.163.com/item/list?categoryId=1010000&subCategoryId=1068003"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10405508",
+      "materialName": "一起拼",
+      "detail": {
+        "appSyn": 1,
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/ad8520b08605a68b69837f46a31e08a2.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/ad8520b08605a68b69837f46a31e08a2.jpg",
+        "linkUrl": "https://m.you.163.com/pin/item/list",
+        "linkType": 2,
+        "wapLinkUrl": "https://m.you.163.com/pin/item/list"
+      },
+      "resourcesId": 5,
+      "materialId": "8321349",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 8321349,
+    "name": "一起拼",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/ad8520b08605a68b69837f46a31e08a2.jpg",
+    "targetUrl": "https://m.you.163.com/pin/item/list"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10371031",
+      "materialName": "活动 5月刊",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "http://you.163.com/act/pub/2kcqiKwkco.html",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/7ff13dd9a6fe36ff404fd9a2ca53f672.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/7ff13dd9a6fe36ff404fd9a2ca53f672.jpg",
+        "linkUrl": "https://m.you.163.com/act/pub/2kcqiKwkco.html",
+        "linkType": 2,
+        "wapLinkUrl": "https://m.you.163.com/act/pub/2kcqiKwkco.html",
+        "pcPicUrl": "https://yanxuan.nosdn.127.net/1f9d20d729d27e9cc6bda1a048bd4c92.jpg"
+      },
+      "resourcesId": 6,
+      "materialId": "10371023",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 10371023,
+    "name": "活动 5月刊",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/7ff13dd9a6fe36ff404fd9a2ca53f672.jpg",
+    "targetUrl": "https://m.you.163.com/act/pub/2kcqiKwkco.html"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10406601",
+      "materialName": "专题页 丁磊推荐",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/5303368d01a614f572d0e6b1c4eef0d1.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/5303368d01a614f572d0e6b1c4eef0d1.jpg",
+        "linkUrl": "https://m.you.163.com/topic/v1/pub/MZee3MWrbs.html",
+        "linkType": 2,
+        "wapLinkUrl": "https://m.you.163.com/topic/v1/pub/MZee3MWrbs.html"
+      },
+      "resourcesId": 7,
+      "materialId": "10218600",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 10218600,
+    "name": "专题页 丁磊推荐",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/5303368d01a614f572d0e6b1c4eef0d1.jpg",
+    "targetUrl": "https://m.you.163.com/topic/v1/pub/MZee3MWrbs.html"
+  },
+  {
+    "expireTime": 0,
+    "extra": {
+      "taskId": "10403439",
+      "materialName": "专题 白衣少年",
+      "detail": {
+        "appSyn": 1,
+        "pcLinkUrl": "http://you.163.com/topic/v1/pub/VVxKhviPfT.html",
+        "wapPicUrl": "https://yanxuan.nosdn.127.net/e6434443defc9a226336695702c29f5b.jpg",
+        "picUrl": "https://yanxuan.nosdn.127.net/e6434443defc9a226336695702c29f5b.jpg",
+        "linkUrl": "https://m.you.163.com/topic/v1/pub/VVxKhviPfT.html",
+        "linkType": 2,
+        "wapLinkUrl": "https://m.you.163.com/topic/v1/pub/VVxKhviPfT.html",
+        "pcPicUrl": "https://yanxuan.nosdn.127.net/c9826484a34db40145b25773224cbf30.jpg"
+      },
+      "resourcesId": 8,
+      "materialId": "10402076",
+      "taskType": 1,
+      "materialType": "广告banner",
+      "crmUserGroupName": "无分组",
+      "operator": "张宛亭",
+      "crmUserGroupId": "0"
+    },
+    "id": 10402076,
+    "name": "专题 白衣少年",
+    "onlineTime": 0,
+    "picUrl": "https://yanxuan.nosdn.127.net/e6434443defc9a226336695702c29f5b.jpg",
+    "targetUrl": "https://m.you.163.com/topic/v1/pub/VVxKhviPfT.html"
+  }
+]
