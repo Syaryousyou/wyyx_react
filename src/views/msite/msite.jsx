@@ -1,5 +1,6 @@
 import React from 'react'
 import Swiper from 'swiper'
+import 'swiper/dist/css/swiper.min.css'
 import './images/logo.png'
 import './images/search.png'
 import './images/sale/01.jpg'
@@ -8,54 +9,155 @@ import './images/newUser/newUser.png'
 import './images/supply/supplyMore.png'
 import './images/newItems/bg.png'
 import './images/hotItems/bg.png'
-import Bg from './images/brand/01.png'
-import itemImg from './images/newItems/01.png'
-import hitemImg from './images/hotItems/01.png'
-import flashImg from './images/flash/01.png'
-import topicImg from './images/topic/01.jpg'
-import gitemImg from './images/grid/01.png'
 import './msite.styl'
 import MsiteGoToTop from '../../components/msiteGoToTop/msiteGoToTop'
-import {reqMbanner} from '../../api/index'
+import {reqMbanner,
+  reqMServiceInfo,
+  reqMBrandSupplyInfo,
+  reqNewItems,
+  reqHotItems,
+  reqFlashSale,
+  reqTopicList,
+  reqCateList} from '../../api/index'
 export default class Msite extends React.Component{
   state = {
     bannerInfo: [], // 首页轮播图信息
+    serviceInfo: [], // 首页轮播图下方服务保障信息
+    brandsupplyinfo: [], // 品牌直供信息
+    newItems: [], // 新品首发列表
+    hotItems: [], // 人气商品列表
+    flashInfo: {}, // 人气限时购信息
+    topicList: [], // 专题精选列表
+    cateList: [], // 好物列表
   }
-  // async componentWillMount () {
-  //   // 首页轮播图信息
-  //   const result = await reqMbanner()
-  //   if (result.code===0) {
-  //     const bannerInfo = result.data
-  //     this.setState({
-  //       bannerInfo
-  //     })
-  //
-  //   }
-  //   console.log('---1')
-  // }
-  componentWillMount () {
-    // 首页轮播图信息
+  getBannerInfo = () => {
     const result = reqMbanner()
     result.then(response =>{
-       const bannerInfo = response.data
+      const bannerInfo = response.data
       this.setState({
         bannerInfo
       })
     })
-    console.log('---1')
   }
-  componentDidUpdate() {
-    console.log('---')
-    new Swiper('.slideService-container', {
-      loop: true,
-      // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination'
-      }
+  getReqMServiceInfo = () => {
+    const result = reqMServiceInfo()
+    result.then(response =>{
+      const serviceInfo = response.data
+      this.setState({
+        serviceInfo
+      })
     })
   }
+  getBrandsupplyinfo = () => {
+    const result = reqMBrandSupplyInfo()
+    result.then(response =>{
+      const maxArr = response.data
+      const brandsupplyinfo = []
+      for (let i = 0; i < 4; i++) {
+        brandsupplyinfo.push(maxArr[i])
+      }
+      this.setState({
+        brandsupplyinfo
+      })
+    })
+  }
+  getNewItems = () => {
+    const result = reqNewItems()
+    result.then(response =>{
+      const newItems = response.data
+      this.setState({
+        newItems
+      })
+    })
+  }
+  getHotItems = () => {
+    const result = reqHotItems()
+    result.then(response =>{
+      const hotItems = response.data
+      this.setState({
+        hotItems
+      })
+    })
+  }
+  getFlashInfo = () => {
+    const result = reqFlashSale()
+    result.then(response =>{
+      const flashInfo = response.data
+      this.setState({
+        flashInfo
+      })
+    })
+  }
+  getTopicList = () => {
+    const result = reqTopicList()
+    result.then(response =>{
+      const topicList = response.data
+      this.setState({
+        topicList
+      })
+    })
+  }
+  getCateList = () => {
+    const result = reqCateList()
+    result.then(response =>{
+      const cateList = response.data
+      this.setState({
+        cateList
+      })
+    })
+  }
+  componentDidMount () {
+    // 首页轮播图信息
+    this.getBannerInfo()
+    this.getReqMServiceInfo()
+    this.getBrandsupplyinfo()
+    this.getNewItems()
+    this.getHotItems()
+    this.getFlashInfo()
+    this.getTopicList()
+    this.getCateList()
+  }
+  componentDidUpdate() {
+    if (!this.mBanner) {
+      this.mBanner = new Swiper('.slideService-container', {
+        loop: true,
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination'
+        }
+      })
+    }
+    if (!this.mNewItems) {
+      this.mNewItems = new Swiper(this.refs.newItems, {
+        initialSlide: 0,
+        slidesPerView: 'auto',
+        autoHeight: true
+      })
+    }
+    if (!this.mHotItemsnew) {
+      this.mHotItemsnew = new Swiper('.hotInner', {
+        initialSlide: 0,
+        slidesPerView: 'auto',
+        autoHeight: true
+      })
+    }
+    if (!this.mTopic) {
+      this.mTopic = new Swiper('.topicSlide-container', {
+        initialSlide: 0,
+        slidesPerView: 'auto',
+        autoHeight: true
+      })
+    }
+  }
   render(){
-    const {bannerInfo} = this.state
+    const {bannerInfo,
+      serviceInfo,
+      newItems,
+      hotItems,
+      brandsupplyinfo,
+      flashInfo,
+      topicList,
+      cateList} = this.state
     return(
       <div>
         <header className="msiteHeader">
@@ -98,7 +200,7 @@ export default class Msite extends React.Component{
         <div className="msiteContent">
           <div className="slide_service">
             <div className="slide">
-              <div className="slideService-container swiper-container">
+              <div className="slideService-container swiper-container" ref="banner">
                 <div className="swiper-wrapper">
                   {
                     bannerInfo.map((ban, index) => (
@@ -107,31 +209,22 @@ export default class Msite extends React.Component{
                       </div>
                     ))
                   }
-
                 </div>
                 <div className="swiper-pagination mySwiperPagination"/>
               </div>
             </div>
             <div className="service">
               <ul className="list">
-                <li className="item">
-                  <a>
-                    <i className="servicePolicy"/>
-                    <span className="serviceName">网易自营品牌</span>
-                  </a>
-                </li>
-                <li className="item">
-                  <a>
-                    <i className="servicePolicy"/>
-                    <span className="serviceName">网易自营品牌</span>
-                  </a>
-                </li>
-                <li className="item">
-                  <a>
-                    <i className="servicePolicy"/>
-                    <span className="serviceName">网易自营品牌</span>
-                  </a>
-                </li>
+                {
+                  serviceInfo.map((service, index) => (
+                    <li className="item" key={index}>
+                      <a>
+                        <i className="servicePolicy" style={{backgroundImage: service.icon}}/>
+                        <span className="serviceName">{service.desc}</span>
+                      </a>
+                    </li>
+                  ))
+                }
               </ul>
             </div>
           </div>
@@ -144,50 +237,21 @@ export default class Msite extends React.Component{
             </div>
             <div className="content">
               <ul className="contentList">
-                <li className="contentItem">
-                  <a>
-                    <div className="brand">
-                      <h4  className="title ellipsis">CK制造商</h4>
-                      <div className="price">
-                        <span>99元起</span>
-                      </div>
-                    </div>
-                    <img className="brandImg" src={Bg} alt="02"/>
-                  </a>
-                </li>
-                <li className="contentItem">
-                  <a>
-                    <div className="brand">
-                      <h4  className="title ellipsis">CK制造商</h4>
-                      <div className="price">
-                        <span>99元起</span>
-                      </div>
-                    </div>
-                    <img className="brandImg" src={Bg} alt="02"/>
-                  </a>
-                </li>
-                <li className="contentItem">
-                  <a>
-                    <div className="brand">
-                      <h4  className="title ellipsis">CK制造商</h4>
-                      <div className="price">
-                        <span>99元起</span>
-                      </div>
-                    </div>
-                    <img className="brandImg" src={Bg} alt="02"/>
-                  </a>
-                </li>
-                <li className="contentItem">
-                  <a >
-                    <div className="brand">
-                      <h4  className="title ellipsis">CK制造商</h4>
-                      <div className="price">
-                        <span>99元起</span>
-                      </div>
-                    </div>
-                    <img className="brandImg" src={Bg} alt="02"/>
-                  </a>
-                </li>
+                {
+                  brandsupplyinfo.map((brand, index) => (
+                    <li className="contentItem" key={index}>
+                      <a>
+                        <div className="brand">
+                          <h4  className="title ellipsis">{brand.name}</h4>
+                          <div className="price">
+                            <span>{brand.floorPrice}元起</span>
+                          </div>
+                        </div>
+                        <img className="brandImg" src={brand.picUrl} alt="02"/>
+                      </a>
+                    </li>
+                  ))
+                }
               </ul>
             </div>
           </div>
@@ -206,28 +270,32 @@ export default class Msite extends React.Component{
               </a>
             </header>
             <div className="goods">
-              <div className="inner swiper-container">
+              <div className="inner swiper-container" ref="newItems">
                 <ul className="list swiper-wrapper">
-                  <li className="item swiper-slide">
-                    <a className="good">
-                      <div className="good_header">
-                        <div className="wrap">
-                          <img src={itemImg} alt="01"/>
-                        </div>
-                      </div>
-                      <span></span>
-                      <div className="goodName">
-                        <span>小龙虾 4-6钱 1千克/盒 （800克虾+200克汤）</span>
-                      </div>
-                      <div className="gooeDesc ellipsis">
-                        夏季爆品，媲美现煮
-                      </div>
-                      <div className="goodPrice">
-                        <span>￥98</span>
-                      </div>
-                      <span></span>
-                    </a>
-                  </li>
+                  {
+                    newItems.map((nitem, index) => (
+                      <li className="item swiper-slide" key={index}>
+                        <a className="good">
+                          <div className="good_header">
+                            <div className="wrap">
+                              <img src={nitem.listPicUrl} alt="01"/>
+                            </div>
+                          </div>
+                          <span></span>
+                          <div className="goodName">
+                            <span>{nitem.name}</span>
+                          </div>
+                          <div className="gooeDesc ellipsis">
+                            {nitem.simpleDesc}
+                          </div>
+                          <div className="goodPrice">
+                            <span>￥{nitem.retailPrice}</span>
+                          </div>
+                          <span></span>
+                        </a>
+                      </li>
+                    ))
+                  }
                   <li className="item swiper-slide lookMore">
                     <a className="click">
                       <span className="moreText">查看全部</span>
@@ -254,26 +322,30 @@ export default class Msite extends React.Component{
             <div className="goods">
               <div className="hotInner swiper-container">
                 <ul className="list swiper-wrapper">
-                  <li className="item swiper-slide">
-                    <a className="good">
-                      <div className="good_header">
-                        <div className="wrap">
-                          <img src={hitemImg} alt="01"/>
-                        </div>
-                      </div>
-                      <span></span>
-                      <div className="goodName">
-                        <span>绿豆糕</span>
-                      </div>
-                      <div className="gooeDesc ellipsis">
-                        细腻松软，入口绵柔
-                      </div>
-                      <div className="goodPrice">
-                        <span>￥12.9</span>
-                      </div>
-                      <span></span>
-                    </a>
-                  </li>
+                  {
+                    hotItems.map((hitem, index) => (
+                      <li className="item swiper-slide" key={index}>
+                        <a className="good">
+                          <div className="good_header">
+                            <div className="wrap">
+                              <img src={hitem.listPicUrl} alt="01"/>
+                            </div>
+                          </div>
+                          <span></span>
+                          <div className="goodName">
+                            <span>{hitem.name}</span>
+                          </div>
+                          <div className="gooeDesc ellipsis">
+                            {hitem.simpleDesc}
+                          </div>
+                          <div className="goodPrice">
+                            <span>￥{hitem.retailPrice}</span>
+                          </div>
+                          <span></span>
+                        </a>
+                      </li>
+                    ))
+                  }
                   <li className="item swiper-slide lookMore">
                     <a className="click">
                       <span className="moreText">查看全部</span>
@@ -305,16 +377,16 @@ export default class Msite extends React.Component{
                 </div>
                 <div className="rightItem">
                   <div className="flashGood">
-                    <img src={flashImg} alt="flash"/>
+                    <img src={flashInfo.primaryPicUrl} alt="flash"/>
                   </div>
                   <div className="flashPrice">
                     <div className="nowPrice">
                       <span className="rmb">￥</span>
-                      <span>200</span>
+                      <span>{flashInfo.activityPrice}</span>
                     </div>
                     <div className="originPrice">
                       <span className="rmb">￥</span>
-                      <span>280</span>
+                      <span>{flashInfo.originPrice}</span>
                     </div>
                   </div>
                 </div>
@@ -334,63 +406,76 @@ export default class Msite extends React.Component{
             <div className="topicSlide">
               <div className="topicSlide-container swiper-container">
                 <ul className="topicList swiper-wrapper">
-                  <li className="topicItem swiper-slide">
-                    <a className="topicA">
-                      <img src={topicImg} alt="01"/>
-                    </a>
-                    <div className="topicDes">
-                      <h4 className="topicDesTitle ellipsis">给毛孔来一次深度清洁</h4>
-                      <span className="topicPrice">
-                    <span>107.1元起</span>
-                  </span>
-                    </div>
-                    <div className="topicDesPlus ellipsis">
-                      硅胶洁面仪，洗出会发光的素颜肌
-                    </div>
-                  </li>
+                  {
+                    topicList.map((t, index)=>(
+                      <li className="topicItem swiper-slide" key={index}>
+                        <a className="topicA">
+                          <img src={t.itemPicUrl} alt="01"/>
+                        </a>
+                        <div className="topicDes">
+                          <h4 className="topicDesTitle ellipsis">{t.title}</h4>
+                          <span className="topicPrice">
+                            <span>{t.priceInfo}元起</span>
+                          </span>
+                        </div>
+                        <div className="topicDesPlus ellipsis">
+                          {t.subtitle}
+                        </div>
+                      </li>
+                    ))
+                  }
                 </ul>
               </div>
             </div>
           </div>
-          <div className="goodGrid">
-            <div className="goodGrid-wrap">
-              <h3 className="goodGrid-title">居家好物</h3>
-              <div className="goodGridContent">
-                <ul className="goodGridList">
-                  <li className="goodGridItem">
-                    <a className="goodGridItemA">
-                      <div className="goodGridItemA-hd">
-                        <div className="goodGridImg">
-                          <img src={gitemImg} alt="01" />
-                        </div>
-                        <div className="goodGridDes ellipsis">
-                          宽细夹排，升级爽滑凉感
-                        </div>
-                      </div>
-                      <div className="goodGridItemA-name ellipsis">
-                        <span>天然宽篾头层青碳化竹凉席</span>
-                      </div>
-                      <div className="goodGridItemA-price">
-                        <span>￥209.25</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li className="goodGridItem goodGridItem-more">
-                    <a className="goodGridItemA">
-                      <div className="goodGridItemA-hd">
-                        <div className="moreContent">
-                          <div className="moreContentA">
-                            <p>更多居家好物</p>
-                            <i/>
+          {
+            cateList.map((grid, index)=>(
+              <div className="goodGrid" key={index}>
+                <div className="goodGrid-wrap">
+                  <h3 className="goodGrid-title">{grid.name}好物</h3>
+                  <div className="goodGridContent">
+                    <ul className="goodGridList">
+                      {
+                        grid.itemList.map((item, index)=>(
+                          <li className="goodGridItem" key={index}>
+                            <a className="goodGridItemA">
+                              <div className="goodGridItemA-hd">
+                                <div className="goodGridImg">
+                                  <img src={item.listPicUrl} alt="01" />
+                                </div>
+                                <div className="goodGridDes ellipsis">
+                                  {item.simpleDesc}
+                                </div>
+                              </div>
+                              <div className="goodGridItemA-name ellipsis">
+                                <span>{item.name}</span>
+                              </div>
+                              <div className="goodGridItemA-price">
+                                <span>￥{item.retailPrice}</span>
+                              </div>
+                            </a>
+                          </li>
+                        ))
+                      }
+                      <li className="goodGridItem goodGridItem-more">
+                        <a className="goodGridItemA">
+                          <div className="goodGridItemA-hd">
+                            <div className="moreContent">
+                              <div className="moreContentA">
+                                <p>更多居家好物</p>
+                                <i/>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            ))
+
+          }
           <div className="msiteFooter">
             <div className="footerContent">
               <div className="button">
@@ -416,3 +501,7 @@ export default class Msite extends React.Component{
     )
   }
 }
+// export default connect(
+//   state=>({newItems:state.newItems}),
+//   {getNewItems}
+// )(Msite)
