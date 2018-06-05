@@ -1,9 +1,17 @@
 import React from 'react'
 import './profile.styl'
 import proBg from './images/header/bg.png'
+import AlertTip from '../../components/alertTip/alertTip'
 export default class Profile extends React.Component{
   state = {
     loginWay: true, // true为普通登录， false为手机登录
+    userName: '', // 普通登录用户名
+    password: '', // 普通登录密码
+    phone: '', // 手机登录用手机号
+    captcha: '', // 手机登录用图片验证码
+    message: '', // 手机登录用动态密码
+    alertText: '', // 提示文本
+    alertShow: false // 是否显示警示框，默认不显示
   }
   changeLoginWay = () => {
     const loginWay = !this.state.loginWay
@@ -11,11 +19,52 @@ export default class Profile extends React.Component{
       loginWay
     })
   }
+  changeLoginInfo = (type, e) => {
+    const val = e.target.value
+    this.setState({
+      [type]: val
+    })
+  }
   login = () => {
-
+    const {loginWay} = this.state
+    if (loginWay) {
+      const {userName, password} = this.state
+      if (!userName) {
+        this.showAlert('请输入用户名')
+        return
+      } else if (!password) {
+        this.showAlert('请输入密码')
+        return
+      }
+    }else {
+      const {phone, captcha, message} = this.state
+      if (!phone) {
+        this.showAlert('请输入手机号')
+        return
+      } else if (!captcha) {
+        this.showAlert('请输入图片验证码')
+        return
+      } else if (!message) {
+        this.showAlert('请输入动态密码')
+        return
+      }
+    }
+    this.props.history.replace('/msite')
+  }
+  showAlert = (alertText) => {
+    this.setState({
+      alertShow: true,
+      alertText: alertText
+    })
+  }
+  closeTip = () => {
+    this.setState({
+      alertShow: false,
+      alertText: ''
+    })
   }
   render(){
-    const {loginWay} = this.state
+    const {loginWay, alertShow, alertText} = this.state
     return(
       <div className="profileContainer">
         <header className="Header">
@@ -52,22 +101,22 @@ export default class Profile extends React.Component{
             <form>
               <div className= {loginWay ? "userLogin active" : "userLogin"}>
                 <div className="inpCon">
-                  <input type="text" placeholder="手机号/邮箱/用户名"/>
+                  <input type="text" placeholder="手机号/邮箱/用户名" onChange={(e)=>this.changeLoginInfo('userName', e)}/>
                 </div>
                 <div className="inpCon">
-                  <input type="password" placeholder="输入密码"/>
+                  <input type="password" placeholder="输入密码" onChange={(e)=>this.changeLoginInfo('password', e)}/>
                 </div>
               </div>
               <div className= {loginWay ? "poneLogin" : "poneLogin active"}>
                 <div className="inpCon">
-                  <input type="text" placeholder="已注册的手机号" />
+                  <input type="text" placeholder="已注册的手机号" onChange={(e)=>this.changeLoginInfo('phone', e)}/>
                 </div>
                 <div className="inpCon">
-                  <input type="text" placeholder="请输入图片内容" />
+                  <input type="text" placeholder="请输入图片内容" onChange={(e)=>this.changeLoginInfo('captcha', e)}/>
                   <img className="get_verification" src={require('./images/captcha.svg')} alt="captcha"/>
                 </div>
                 <div className="inpCon">
-                  <input type="text" placeholder="动态密码" />
+                  <input type="text" placeholder="动态密码" onChange={(e)=>this.changeLoginInfo('message', e)}/>
                   <button disabled="disabled" className="get_password" >获取动态密码</button>
                 </div>
               </div>
@@ -95,7 +144,9 @@ export default class Profile extends React.Component{
             <span>微博</span>
           </div>
         </footer>
-        {/*<AlertTip/>*/}
+        {
+          alertShow ?  <AlertTip closeTip={this.closeTip} alertText={alertText}/> : ''
+        }
       </div>
     )
   }

@@ -100,27 +100,30 @@ export default class Goods extends React.Component{
     this.getfindMoreInfo()
   }
   componentDidUpdate () {
-    if (!this.gBanSp) {
-      this.gBanSp = new Swiper ('.gCBannerContainer', {
-        initialSlide: 0,
-        slidesPerView: 1.15, // 设置slider容器能够同时显示的slides数量
-        centeredSlides: true,
-        spaceBetween: 30, // 在slide之间设置距离单位为px
-        loop: true
-      })
+    if (this.gBanSp) {
+      this.gBanSp.destroy()
     }
-    if (!this.gArtSp) {
-      this.gArtSp = new Swiper ('.gCArticleContainer', {
-        initialSlide: 0,
-        slidesPerView: 'auto'
-      })
+    this.gBanSp = new Swiper ('.gCBannerContainer', {
+      initialSlide: 0,
+      slidesPerView: 1.15, // 设置slider容器能够同时显示的slides数量
+      centeredSlides: true,
+      spaceBetween: 30, // 在slide之间设置距离单位为px
+      loop: true
+    })
+    if (this.gArtSp) {
+      this.gArtSp.destroy()
     }
-    if (!this.gFifteen) {
-      this.gFifteen = new Swiper ('.gTenFifteenContainer', {
-        initialSlide: 0,
-        slidesPerView: 'auto'
-      })
+    this.gArtSp = new Swiper ('.gCArticleContainer', {
+      initialSlide: 0,
+      slidesPerView: 'auto'
+    })
+    if (this.gFifteen) {
+      this.gFifteen.destroy()
     }
+    this.gFifteen = new Swiper ('.gTenFifteenContainer', {
+      initialSlide: 0,
+      slidesPerView: 'auto'
+    })
   }
   render(){
     const {gbannerInfo,

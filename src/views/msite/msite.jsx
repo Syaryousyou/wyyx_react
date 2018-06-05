@@ -1,6 +1,7 @@
 import React from 'react'
 import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css'
+import BScroll from 'better-scroll'
 import './images/logo.png'
 import './images/search.png'
 import './images/sale/01.jpg'
@@ -18,10 +19,12 @@ import {reqMbanner,
   reqHotItems,
   reqFlashSale,
   reqTopicList,
-  reqCateList} from '../../api/index'
+  reqCateList,
+  reqMSclassify} from '../../api/index'
 export default class Msite extends React.Component{
   state = {
     bannerInfo: [], // 首页轮播图信息
+    msiteClassify: [], // 首页头部下方横向滑条信息
     serviceInfo: [], // 首页轮播图下方服务保障信息
     brandsupplyinfo: [], // 品牌直供信息
     newItems: [], // 新品首发列表
@@ -29,6 +32,12 @@ export default class Msite extends React.Component{
     flashInfo: {}, // 人气限时购信息
     topicList: [], // 专题精选列表
     cateList: [], // 好物列表
+    classId: 1005000
+  }
+  updateIndex = (index) => {
+    this.setState({
+      classId: index
+    })
   }
   getBannerInfo = () => {
     const result = reqMbanner()
@@ -36,6 +45,15 @@ export default class Msite extends React.Component{
       const bannerInfo = response.data
       this.setState({
         bannerInfo
+      })
+    })
+  }
+  getMsiteClassify = () => {
+    const result = reqMSclassify()
+    result.then(response =>{
+      const msiteClassify = response.data
+      this.setState({
+        msiteClassify
       })
     })
   }
@@ -116,38 +134,55 @@ export default class Msite extends React.Component{
     this.getFlashInfo()
     this.getTopicList()
     this.getCateList()
+    this.getMsiteClassify()
+    new BScroll('.hesderBottom', {
+      scrollX: true,
+      click: true
+    })
   }
   componentDidUpdate() {
-    if (!this.mBanner) {
-      this.mBanner = new Swiper('.slideService-container', {
-        loop: true,
-        // 如果需要分页器
-        pagination: {
-          el: '.swiper-pagination'
-        }
-      })
+    if (this.BanSwiper) {
+      this.BanSwiper.destroy()
     }
-    if (!this.mNewItems) {
-      this.mNewItems = new Swiper(this.refs.newItems, {
+    this.BanSwiper = new Swiper('.slideService-container', {
+      loop: true,
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination'
+      }
+    })
+    if (this.NewSwiper) {
+      this.NewSwiper.destroy()
+    }
+    this.NewSwiper = new Swiper(this.refs.newItems, {
         initialSlide: 0,
         slidesPerView: 'auto',
         autoHeight: true
       })
+    if (this.TopicSwiper) {
+      this.TopicSwiper.destroy()
     }
-    if (!this.mHotItemsnew) {
-      this.mHotItemsnew = new Swiper('.hotInner', {
-        initialSlide: 0,
-        slidesPerView: 'auto',
-        autoHeight: true
-      })
+    this.TopicSwiper = new Swiper('.topicSlide-container', {
+      initialSlide: 0,
+      slidesPerView: 'auto',
+      autoHeight: true
+    })
+    if (this.HotSwiper) {
+      this.HotSwiper.destroy()
     }
-    if (!this.mTopic) {
-      this.mTopic = new Swiper('.topicSlide-container', {
-        initialSlide: 0,
-        slidesPerView: 'auto',
-        autoHeight: true
-      })
-    }
+    this.HotSwiper = new Swiper('.hotInner', {
+      initialSlide: 0,
+      slidesPerView: 'auto',
+      autoHeight: true
+    })
+    // if (!this.heScroll) {
+    //   this.heScroll  = new BScroll('.hesderBottom', {
+    //     scrollX: true,
+    //     click: true
+    //   })
+    // } else {
+    //   this.heScroll.refresh()
+    // }
   }
   render(){
     const {bannerInfo,
@@ -157,7 +192,9 @@ export default class Msite extends React.Component{
       brandsupplyinfo,
       flashInfo,
       topicList,
-      cateList} = this.state
+      cateList,
+      msiteClassify,
+      classId} = this.state
     return(
       <div>
         <header className="msiteHeader">
@@ -170,30 +207,13 @@ export default class Msite extends React.Component{
           </div>
           <div className="hesderBottom">
             <div className="list">
-              <div className="item">
-                <span className="text active">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
-              <div className="item">
-                <span className="text">推荐</span>
-              </div>
+              {
+                msiteClassify.map((item, index) => (
+                  <div className="item" key={index} onClick={ ()=> this.updateIndex(item.id)}>
+                    <span className={classId=== item.id ? "text active" : "text"}>{item.name}</span>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </header>

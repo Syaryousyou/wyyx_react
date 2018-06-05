@@ -8,8 +8,9 @@ class FooterGuide extends React.Component{
   }
   render(){
     let path = this.props.location.pathname
-    if (path === '/classify/') {
-      path = '/classify/:id'
+    const reg = /^\/classify/
+    if (reg.test(path)) {
+      path = '/classify'
     }
     let {FooterGuideList} = this.props
     return(
