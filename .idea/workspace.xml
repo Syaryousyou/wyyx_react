@@ -14,28 +14,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="classify.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/classify/classify.jsx">
+      <file leaf-file-name="profile.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/profile/profile.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="283">
+              <caret line="63" column="86" lean-forward="false" selection-start-line="63" selection-start-column="86" selection-end-line="63" selection-end-column="86" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <element signature="e#431#602#0" expanded="false" />
-                <element signature="e#1512#2103#0" expanded="false" />
+                <element signature="e#430#797#0" expanded="false" />
+                <element signature="e#888#972#0" expanded="false" />
+                <element signature="e#1567#1904#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoryList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mock/Classify/categoryList.json">
+      <file leaf-file-name="profile.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/profile/profile.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#105#264#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,10 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/msiteNewItem/msiteNewItem.styl" />
-        <option value="$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.styl" />
-        <option value="$PROJECT_DIR$/src/components/msiteFlash/msiteFlash.styl" />
-        <option value="$PROJECT_DIR$/src/components/msiteFlash/msiteFlash.jsx" />
         <option value="$PROJECT_DIR$/src/components/msiteNewItem/msiteNewItem.jsx" />
         <option value="$PROJECT_DIR$/src/components/msiteBrandSupply/msiteBrandSupply.jsx" />
         <option value="$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.styl" />
@@ -109,18 +104,22 @@
         <option value="$PROJECT_DIR$/src/components/goods/goods.styl" />
         <option value="$PROJECT_DIR$/src/components/footerGuide/footerGuide.styl" />
         <option value="$PROJECT_DIR$/src/components/goods/goods.jsx" />
-        <option value="$PROJECT_DIR$/src/components/footerGuide/footerGuide.jsx" />
         <option value="$PROJECT_DIR$/src/redux/action-types.js" />
         <option value="$PROJECT_DIR$/src/redux/actions.js" />
-        <option value="$PROJECT_DIR$/src/components/main/main.jsx" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducer.js" />
         <option value="$PROJECT_DIR$/src/redux/store.js" />
         <option value="$PROJECT_DIR$/src/components/msiteGoToTop/msiteGoToTop.jsx" />
         <option value="$PROJECT_DIR$/src/views/goods/goods.styl" />
         <option value="$PROJECT_DIR$/src/views/msite/msite.jsx" />
         <option value="$PROJECT_DIR$/src/views/goods/goods.jsx" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/views/menuDetail/menuDetail.jsx" />
         <option value="$PROJECT_DIR$/src/views/classify/classify.jsx" />
+        <option value="$PROJECT_DIR$/src/components/footerGuide/footerGuide.jsx" />
+        <option value="$PROJECT_DIR$/src/components/main/main.jsx" />
+        <option value="$PROJECT_DIR$/src/views/shopCart/shopCart.jsx" />
+        <option value="$PROJECT_DIR$/src/views/profile/profile.styl" />
+        <option value="$PROJECT_DIR$/src/views/profile/profile.jsx" />
       </list>
     </option>
   </component>
@@ -154,8 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,14 +169,7 @@
               <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-              <item name="Classify" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
@@ -187,32 +177,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wyyx-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React_wrok/React/gzhipin" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="list.type.of.created.stylesheet" value="Stylus" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Webstorm\wyyx-client\src\assets" />
+      <recent name="E:\Webstorm\wyyx-client\src\views\menuDetail" />
+      <recent name="E:\Webstorm\wyyx-client\src\redux" />
+      <recent name="E:\Webstorm\wyyx-client\src" />
+      <recent name="E:\Webstorm\wyyx-client\src\api" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Webstorm\wyyx-client\src\views" />
       <recent name="E:\Webstorm\wyyx-client\src\components\msite\images" />
       <recent name="E:\Webstorm\wyyx-client\src\components\goods" />
       <recent name="E:\Webstorm\wyyx-client\src\components\msite" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Webstorm\wyyx-client\src\redux" />
-      <recent name="E:\Webstorm\wyyx-client\src" />
-      <recent name="E:\Webstorm\wyyx-client\src\api" />
-      <recent name="E:\Webstorm\wyyx-client\src\views" />
-      <recent name="E:\Webstorm\wyyx-client\src\components\FooterGuide" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,18 +243,19 @@
       <workItem from="1527899769746" duration="19264000" />
       <workItem from="1527988827271" duration="27818000" />
       <workItem from="1528071797177" duration="32528000" />
-      <workItem from="1528111486281" duration="1717000" />
+      <workItem from="1528111486281" duration="8137000" />
+      <workItem from="1528158451360" duration="7063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81327000" />
+    <option name="totallyTimeSpent" value="94810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -276,28 +276,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42414355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -319,15 +297,11 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/msiteHotItem/msiteHotItem.styl" />
-    <entry file="file://$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.styl" />
-    <entry file="file://$PROJECT_DIR$/src/components/msiteTopic/msiteTopic.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/components/msiteGoodGrid/images/01.png" />
     <entry file="file://$PROJECT_DIR$/src/components/msiteGoodGrid/msiteGoodGrid.jsx" />
     <entry file="file://$PROJECT_DIR$/src/components/msiteGoodGrid/msiteGoodGrid.styl" />
     <entry file="file://$PROJECT_DIR$/src/components/msite/msite.jsx" />
@@ -375,16 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/footerGuide/footerGuide.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/classify/classify.jsx" />
     <entry file="file://$PROJECT_DIR$/src/mock/mockServer.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -415,30 +379,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/main/main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding>
-            <element signature="e#460#1020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -446,9 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -456,25 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#1829#0" expanded="false" />
-            <element signature="e#163#910#0" expanded="false" />
-            <element signature="e#931#1829#0" expanded="false" />
-            <element signature="e#1846#19296#0" expanded="false" />
-            <element signature="e#2039#2355#0" expanded="false" />
-            <element signature="e#2390#2525#0" expanded="false" />
-            <element signature="e#2545#3325#0" expanded="false" />
-            <element signature="e#3345#4929#0" expanded="false" />
-            <element signature="e#5003#6095#0" expanded="false" />
-            <element signature="e#6113#8099#0" expanded="false" />
-            <element signature="e#8116#11300#0" expanded="false" />
-            <element signature="e#11318#13431#0" expanded="false" />
-            <element signature="e#13444#13721#0" expanded="false" />
-            <element signature="e#13736#15448#0" expanded="false" />
-            <element signature="e#15465#18452#0" expanded="false" />
-            <element signature="e#18472#19296#0" expanded="false" />
-            <element signature="e#19316#19544#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,7 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,19 +480,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/better-scroll/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="196" column="15" lean-forward="false" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mock/Classify/categoryList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/menuDetail/menuDetail.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
-            <element signature="e#797#1598#0" expanded="false" />
-            <element signature="e#1604#2565#0" expanded="false" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/msite/msite.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="81" column="23" lean-forward="false" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+        <state relative-caret-position="200">
+          <caret line="119" column="2" lean-forward="false" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="20" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
             <element signature="e#955#1117#0" expanded="false" />
             <element signature="e#1147#1316#0" expanded="false" />
             <element signature="e#1346#1635#0" expanded="false" />
@@ -581,10 +529,10 @@
             <element signature="e#2209#2371#0" expanded="false" />
             <element signature="e#2394#2553#0" expanded="false" />
             <element signature="e#2848#3031#0" expanded="false" />
-            <element signature="e#3057#3210#0" expanded="false" />
             <element signature="e#3113#3203#0" expanded="false" />
             <element signature="e#3239#3388#0" expanded="false" />
             <element signature="e#3411#3566#0" expanded="false" />
+            <element signature="e#3761#16665#0" expanded="false" />
             <element signature="e#3775#5050#0" expanded="false" />
             <element signature="e#5100#6272#0" expanded="false" />
             <element signature="e#5738#6255#0" expanded="false" />
@@ -593,9 +541,7 @@
             <element signature="e#6325#6466#0" expanded="false" />
             <element signature="e#6479#7221#0" expanded="false" />
             <element signature="e#6519#7202#0" expanded="false" />
-            <element signature="e#7249#9144#0" expanded="false" />
             <element signature="e#7288#7650#0" expanded="false" />
-            <element signature="e#7663#9127#0" expanded="false" />
             <element signature="e#9155#11052#0" expanded="false" />
             <element signature="e#9194#9570#0" expanded="false" />
             <element signature="e#9681#10995#0" expanded="false" />
@@ -613,32 +559,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/better-scroll/types/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/footerGuide/footerGuide.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="196" column="15" lean-forward="false" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
+        <state relative-caret-position="224">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mock/Classify/categoryList.json">
+    <entry file="file://$PROJECT_DIR$/src/components/main/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="424">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="e#105#264#0" expanded="false" />
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/shopCart/shopCart.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="35" column="87" lean-forward="false" selection-start-line="35" selection-start-column="87" selection-end-line="35" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/classify/classify.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="-499">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+            <element signature="e#468#639#0" expanded="false" />
+            <element signature="e#889#1093#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/profile/profile.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/profile/profile.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="63" column="86" lean-forward="false" selection-start-line="63" selection-start-column="86" selection-end-line="63" selection-end-column="86" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#431#602#0" expanded="false" />
-            <element signature="e#1512#2103#0" expanded="false" />
+            <element signature="e#430#797#0" expanded="false" />
+            <element signature="e#888#972#0" expanded="false" />
+            <element signature="e#1567#1904#0" expanded="false" />
           </folding>
         </state>
       </provider>

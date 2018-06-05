@@ -2,7 +2,20 @@ import React from 'react'
 import './profile.styl'
 import proBg from './images/header/bg.png'
 export default class Profile extends React.Component{
+  state = {
+    loginWay: true, // true为普通登录， false为手机登录
+  }
+  changeLoginWay = () => {
+    const loginWay = !this.state.loginWay
+    this.setState({
+      loginWay
+    })
+  }
+  login = () => {
+
+  }
   render(){
+    const {loginWay} = this.state
     return(
       <div className="profileContainer">
         <header className="Header">
@@ -14,7 +27,7 @@ export default class Profile extends React.Component{
           </div>
           <div className="HeaderRight">
             <i className="search"></i>
-            <i className="cart" ></i>
+            <i className="Pcart" ></i>
           </div>
         </header>
         <div className="Lprofile">
@@ -24,11 +37,11 @@ export default class Profile extends React.Component{
             </div>
             <div className="loginWay">
               <ul className="loginStyle">
-                <li className="loginItem active">
+                <li className={loginWay ? "loginItem active" : "loginItem"} onClick={this.changeLoginWay}>
                   <span>普通登录</span>
                   <i></i>
                 </li>
-                <li className="loginItem">
+                <li className={loginWay ? "loginItem" : "loginItem active"} onClick={this.changeLoginWay}>
                   <span>手机动态密码登录</span>
                   <i></i>
                 </li>
@@ -37,7 +50,7 @@ export default class Profile extends React.Component{
           </div>
           <div className="loginForm">
             <form>
-              <div className="userLogin active">
+              <div className= {loginWay ? "userLogin active" : "userLogin"}>
                 <div className="inpCon">
                   <input type="text" placeholder="手机号/邮箱/用户名"/>
                 </div>
@@ -45,13 +58,13 @@ export default class Profile extends React.Component{
                   <input type="password" placeholder="输入密码"/>
                 </div>
               </div>
-              <div className="poneLogin">
+              <div className= {loginWay ? "poneLogin" : "poneLogin active"}>
                 <div className="inpCon">
                   <input type="text" placeholder="已注册的手机号" />
                 </div>
                 <div className="inpCon">
                   <input type="text" placeholder="请输入图片内容" />
-                  <img className="get_verification" src="./images/captcha.svg" alt="captcha"/>
+                  <img className="get_verification" src={require('./images/captcha.svg')} alt="captcha"/>
                 </div>
                 <div className="inpCon">
                   <input type="text" placeholder="动态密码" />
@@ -61,7 +74,7 @@ export default class Profile extends React.Component{
             </form>
           </div>
           <div className="submit">
-            <div className="loginBtn">登录</div>
+            <div className="loginBtn" onClick={this.login}>登录</div>
           </div>
           <div className="newUser">
             <div className="newUserLeft">新用户注册</div>

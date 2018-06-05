@@ -33,7 +33,7 @@ export default class ShopCart extends React.Component{
                 <div className="title">
                   去添加点什么吧
                 </div>
-                <div className="btn">
+                <div className="btn" onClick={() => this.props.history.push('/profile')}>
                   登录
                 </div>
               </div>

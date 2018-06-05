@@ -2,15 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './mock/mockServer'
 import Main from './components/main/main'
+import './assets/css/reset.css'
 import './assets/stylus/mixins.styl'
-import {HashRouter, Route} from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 import {Provider} from 'react-redux'
 import store from './redux/store'
 ReactDOM.render((
   <Provider store={store}>
-    <HashRouter>
+    <BrowserRouter>
       <Route component={Main}/>
-    </HashRouter>
+    </BrowserRouter>
   </Provider>
   ),
   document.getElementById('root')

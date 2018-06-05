@@ -7,7 +7,10 @@ class FooterGuide extends React.Component{
     FooterGuideList:Proptypes.array.isRequired,
   }
   render(){
-    const path = this.props.location.pathname
+    let path = this.props.location.pathname
+    if (path === '/classify/') {
+      path = '/classify/:id'
+    }
     let {FooterGuideList} = this.props
     return(
       <footer className="footer_guide">

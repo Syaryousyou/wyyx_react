@@ -1,18 +1,18 @@
 import React from 'react'
 import BScroll from 'better-scroll'
+import {Route, Switch, Redirect} from 'react-router-dom'
 import './classify.styl'
-import Item from './images/content/01.png'
+import MemuDetail from '../menuDetail/menuDetail'
 import {reqClassifyList} from '../../api/index'
 export default class Classify extends React.Component{
   state = {
     classifyList: [], // 分类页信息
-    index: ''
+    index: 1005000
   }
-  updateIndex = (event) => {
-    console.log(event)
-    // this.setState({
-    //   index: index
-    // })
+  updateIndex = (index) => {
+    this.setState({
+      index: index
+    })
   }
   getClassifyList = () => {
     const result = reqClassifyList()
@@ -31,7 +31,7 @@ export default class Classify extends React.Component{
     })
   }
   render(){
-    const {classifyList} = this.state
+    const {classifyList, index} = this.state
     return(
       <div className="ClassifyCon">
         <header className="cHeader">
@@ -46,32 +46,18 @@ export default class Classify extends React.Component{
               <ul className="menus">
                 {
                   classifyList.map((grid, i) => (
-                    <li className="menu" key={i} onClick={this.updateIndex}>
-                      {grid.name}
+                    <li className={index === grid.id ? "menu active" : "menu"} key={i} onClick={() =>this.props.history.push(`/classify/${grid.id}`)}>
+                      <span onClick={(i) => this.setState({index: grid.id})}>{grid.name}</span>
                     </li>
                   ))
                 }
               </ul>
             </div>
           </div>
-          <div className="menuItem">
-            <div className="hdImg"/>
-            <div className="itemContent">
-              <div className="itemChd">
-                <span className="text">分类</span>
-              </div>
-              <ul className="itemList">
-                <li className="itemListItem">
-                  <div className="itemImg">
-                    <img src={Item} alt='01'/>
-                  </div>
-                  <div className="itemTitle">
-                    床品件套
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <Switch>
+            <Route path={'/classify/:id'} component={MemuDetail}/>
+            <Redirect to={'/classify/1005000'}/>
+          </Switch>
         </div>
       </div>
     )
