@@ -46,7 +46,7 @@ export default class Main extends Component {
     //console.log(path)
     //const currentNav = FooterGuideList.find(nav => nav.path === path)
     return (
-      <div>
+      <div style={{height: '100%'}}>
         <Switch>
           <Route path='/msite' component={Msite}/>
           <Route path='/goods' component={Goods}/>

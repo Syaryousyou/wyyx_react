@@ -6,6 +6,7 @@ import yxlook from './images/look/01.jpg'
 import yxAva from './images/look/avatar.jpg'
 import MsiteGoToTop from '../../components/msiteGoToTop/msiteGoToTop'
 import Ava from './images/recommend/avatar.png'
+import minAva from './images/tenFifteen/01.png'
 import {reqGbanner,
   reqGarticle,
   reqRecommend,
@@ -137,7 +138,7 @@ export default class Goods extends React.Component{
     return(
       <div>
         <header className="gHeader">
-          <div className="gHeaderLeft">
+          <div className="gHeaderLeft" onClick={()=>this.props.history.replace('/msite')}>
             <i className="home"/>
           </div>
           <div className="gHeaderTitle">
@@ -145,7 +146,7 @@ export default class Goods extends React.Component{
           </div>
           <div className="gHeaderRight">
             <i className="search"/>
-            <i className="gcart"/>
+            <i className="gcart" onClick={()=>this.props.history.replace('/shopcart')}/>
           </div>
         </header>
         <div className="gContent">
@@ -259,7 +260,11 @@ export default class Goods extends React.Component{
                           <div className="gTenFifteenItemJoin">
                             <div className="joinInner">
                               <div className="joinInnerLeft">
-                                <div className="LAvatar" style={{backgroundImage: item.participantAvatar[0]}}/>
+                                {
+                                  item.participantAvatar.map((p, index) => (
+                                    <div key={index} className="LAvatar" style={{backgroundImage: 'url('+(p?p:minAva)+')'}}/>
+                                  ))
+                                }
                                 <div className="AEl">
                                   <div className="spot"/>
                                   <div className="spot"/>

@@ -68,7 +68,7 @@ export default class Profile extends React.Component{
     return(
       <div className="profileContainer">
         <header className="Header">
-          <div className="HeaderLeft">
+          <div className="HeaderLeft" onClick={()=>this.props.history.replace('/msite')}>
             <i className="home"></i>
           </div>
           <div className="HeaderTitle">
@@ -76,7 +76,7 @@ export default class Profile extends React.Component{
           </div>
           <div className="HeaderRight">
             <i className="search"></i>
-            <i className="Pcart" ></i>
+            <i className="Pcart" onClick={()=>this.props.history.replace('/shopcart')}></i>
           </div>
         </header>
         <div className="Lprofile">
